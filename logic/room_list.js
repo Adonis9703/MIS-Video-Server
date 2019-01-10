@@ -318,7 +318,7 @@ RoomMgr.prototype.onTimerCheckHeartBeat = function (timeout) {
     }
   }
   var endTS = getTimeStamp()
-  console.log('check heartbeat use time:' + (endTS - nowTS) + 's of ' + this.name)
+  // console.log('check heartbeat use time:' + (endTS - nowTS) + 's of ' + this.name)
 }
 
 /**

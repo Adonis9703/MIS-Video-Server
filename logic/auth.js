@@ -8,7 +8,7 @@ const immgr = require('./im_mgr')
 var tokens = {}
 
 /**
- * 
+ *
  */
 function S4() {
   return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
@@ -92,6 +92,7 @@ function delLoginToken (appID, instID, userID) {
 async function authorizeMiddleware (ctx, next) {
   // 从ctx获取参数
   var query = ctx.query
+  console.log(`鉴权信息`)
   if (('sdkAppID' in query) &&
     ('accountType' in query) &&
     ('userID' in query) &&

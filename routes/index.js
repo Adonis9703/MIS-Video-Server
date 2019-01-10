@@ -10,7 +10,7 @@ const controller = require('../controller')
 const utils = require('../utils')
 const account = require('../account')
 
-const multiRoomPrefix = '/multi_room'
+  const multiRoomPrefix = '/multi_room'
 const doubleRoomPrefix = '/double_room'
 const livePrefix = '/live_room'
 const utilsPrefix = '/utils'
@@ -226,7 +226,7 @@ router.get(utilsPrefix + '/get_test_pushurl', utils.get_test_pushurl)
 router.get(utilsPrefix + '/get_test_rtmpaccurl', utils.get_test_rtmpaccurl)
 
 /**
- * 
+ *
  */
 router.get(utilsPrefix + '/get_login_info', utils.get_login_info)
 

@@ -19,4 +19,6 @@ const router = require('./routes')
 app.use(router.routes())
 
 // 启动程序，监听端口
+console.log(`service started`)
 app.listen(config.port, () => debug(`listening on port ${config.port}`))
+console.log(`service started`)
